@@ -496,10 +496,9 @@ h1
 
 .slider
   height: 100vh
-  overflow: hidden
   position: relative
   width: inherit
-  z-index: -1
+  z-index: 0
   h2 
     font-family: 'Source Sans Pro'
     font-style: normal
@@ -559,8 +558,8 @@ h1
       top: 85%
 
 .slide1
-  background: url(../img/doctors_img/milchenko.jpg) -70px -50px no-repeat
-  background-size: 100% 
+  background: url(../img/doctors_img/milchenko.jpg) bottom no-repeat
+  background-size: 107% 
 .slide2
   background: url(../img/doctors_img/grishina.jpg) bottom no-repeat
   background-size: 107% 
@@ -647,8 +646,8 @@ h1
   width: 100%
   height: 100vh
   margin-top: 70px
-  position: relative
-  overflow: hidden  
+  position: relative 
+  z-index: -1
   h2
     font-style: normal
     font-weight: 900
@@ -705,7 +704,28 @@ a:hover
   ul
     list-style-type: none
 
-//adaptive 
+//adaptive
+
+@media only screen and (min-width: 1440px)
+  .slide1
+    background: url(../img/doctors_img/milchenko.jpg) bottom no-repeat
+    background-size: 105%
+  .slide2
+    background: url(../img/doctors_img/grishina.jpg) bottom no-repeat
+    background-size: 105%
+  .slide3
+    background: url(../img/doctors_img/kolodina.jpg) bottom no-repeat
+    background-size: 105%
+  .slide4
+    background: url(../img/doctors_img/abakumov.jpg) bottom no-repeat
+    background-size: 105% 
+  .slide5
+    background: url(../img/doctors_img/subbotina.jpg) bottom no-repeat
+    background-size: 105%
+  .slide6
+    background: url(../img/doctors_img/tretyakova.jpg) bottom no-repeat
+    background-size: 105%       
+
 @media (max-width: 1199px)
   .connection 
     img
