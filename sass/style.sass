@@ -157,7 +157,7 @@ body
 	.icon
 		float: right
 .social__phone
-  padding-left: 30px	
+  padding-left: 115px    	
 .nav__list-item 
 	position: relative 
 	display: block 
@@ -496,7 +496,7 @@ h1
   
 
 .slider
-  height: 100vh
+  min-height: 100vh //не тронь
   position: relative
   width: inherit
   z-index: 0
@@ -517,6 +517,7 @@ h1
   width: inherit
   height: inherit
   z-index: 0
+  min-height: 100vh //не тронь
   margin-top: 40px
   -webkit-transform: translateX(3in) //поменять эту хуйню
   -moz-transform: translateX(3in)
@@ -546,7 +547,7 @@ h1
         line-height: 152.69%
         letter-spacing: 0.025em
         color: #575359
-  .position, .position_stomatologist
+  .position, .position_stomatologist, .position_gigenist
     position: relative
     font-style: normal
     font-weight: 400
@@ -558,6 +559,8 @@ h1
     top: 80%
     &_stomatologist
       top: 85%
+    &_gigenist
+      top: 80%  
 
 .slide1
   background: url(../img/doctors_img/milchenko.jpg) bottom no-repeat
@@ -640,7 +643,6 @@ h1
 
 //price section
 .price
-  background: url(../img/bg/servises.jpg) center center no-repeat
   box-sizing: border-box
   -webkit-tap-highlight-color: transparent
   user-select: none
@@ -659,14 +661,12 @@ h1
     margin-top: -20px    
   
 .doctor_price
-  position: relative
-  left: 50%
-  transform: translate(-50%, 0)
   width: 257px
   height: 76px
   background: #C3BBCA
   border-radius: 100px
   border: none
+  margin-top: 70px
 
 .btnfos-4
   font-style: normal
@@ -677,25 +677,6 @@ h1
   color: #FFFFFF
   margin: 0px 20px
   text-decoration: none
-  &:after
-    background: #fff
-    content: ""
-    height: 155px
-    left: -75px
-    opacity: .2
-    position: absolute
-    top: -50px
-    width: 50px
-    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
-    -webkit-transform: rotate(35deg)
-    -ms-transform: rotate(35deg)
-    transform: rotate(35deg)
-    z-index: -10
-  &:hover:after
-    left: 120%
-    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
 a:hover
   color: #fff
     
@@ -703,10 +684,68 @@ a:hover
   margin-bottom: 75px
   ul
     list-style-type: none
+    
+
+
+//registrtion section
+.registration
+  box-sizing: border-box
+  -webkit-tap-highlight-color: transparent
+  user-select: none
+  -webkit-user-drag: none
+  width: 100%
+  height: 100vh
+  position: relative
+  overflow: hidden
+  background: url('../img/bg/bg3.jpg')  center (center/cover) no-repeat      
+  h2
+    font-family: 'Source Sans Pro'
+    font-style: normal
+    font-weight: 900
+    font-size: 40px
+    line-height: 50px
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    color: #DFCEED
+    width: 600px
+    margin: 90px 0 33px 0 
+  p
+   font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 152.69%
+    letter-spacing: 0.025em
+  button
+    float: left
+    margin-top: 55px   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //adaptive
 
 @media only screen and (min-width: 1440px)
+  .slides
+    .position
+      top: 88%
   .slide1
     background: url(../img/doctors_img/milchenko.jpg) bottom no-repeat
     background-size: 105%
@@ -724,7 +763,36 @@ a:hover
     background-size: 105%
   .slide6
     background: url(../img/doctors_img/tretyakova.jpg) bottom no-repeat
-    background-size: 105%       
+    background-size: 105% 
+
+@media (max-width: 1330px)
+  .slides
+    h2
+      font-size: 37px  
+    .position
+      font-size: 17px
+      top: 67%
+    .position_stomatologist
+      font-size: 17px
+      top: 70%    
+  .slide1
+    background: url(../img/doctors_img/milchenko.jpg) top no-repeat
+    background-size: 100%
+  .slide2
+    background: url(../img/doctors_img/grishina.jpg) top no-repeat
+    background-size: 100%
+  .slide3
+    background: url(../img/doctors_img/kolodina.jpg) top no-repeat
+    background-size: 100%
+  .slide4
+    background: url(../img/doctors_img/abakumov.jpg) top no-repeat
+    background-size: 100% 
+  .slide5
+    background: url(../img/doctors_img/subbotina.jpg) top no-repeat
+    background-size: 100%
+  .slide6
+    background: url(../img/doctors_img/tretyakova.jpg) top no-repeat
+    background-size: 100% 
 
 @media (max-width: 1199px)
   .connection 
