@@ -1,12 +1,17 @@
+html, body 
+  height: 100%
+
 body
 	padding: 0
 	margin: 0
 	width: auto
-	height: auto
+  min-height: 100%
+  display: grid
+  grid-template-rows: 1fr auto
 
 .main_image 
 	width: 100%
-	height: 100vh
+	min-height: 100vh
 	background: url('../img/bg/bg2.jpg')  center (center/cover) no-repeat
 	-webkit-animation-duration: 1.4s
 	animation-duration: 1.4s
@@ -643,6 +648,8 @@ h1
 
 //price section
 .price
+  background: url('../img/bg/servises.jpg') center (top/cover) no-repeat
+  background-size: 95%
   box-sizing: border-box
   -webkit-tap-highlight-color: transparent
   user-select: none
@@ -694,10 +701,10 @@ a:hover
   user-select: none
   -webkit-user-drag: none
   width: 100%
-  height: 100vh
+  min-height: 85vh
   position: relative
   overflow: hidden
-  background: url('../img/bg/bg3.jpg')  center (center/cover) no-repeat      
+  background: url('../img/bg/offer.jpg') center (center/cover) no-repeat      
   h2
     font-family: 'Source Sans Pro'
     font-style: normal
@@ -710,34 +717,67 @@ a:hover
     width: 600px
     margin: 90px 0 33px 0 
   p
-   font-style: normal
+    font-style: normal
     font-weight: 400
     font-size: 20px
     line-height: 152.69%
     letter-spacing: 0.025em
+
   button
-    float: left
     margin-top: 55px   
 
+//footer
+footer 
+  grid-row-start: 2
+  grid-row-end: 3
+  justify-content: space-between
+  align-items: flex-star	
+  background: #EBE5EE
+  ul
+    list-style: none
+.adress, .footer_menu, .social
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  line-height: 130%
+  letter-spacing: 0.025em
+  color: #969397
+  img
+    margin-top: 100px       	   
+  .name, .date, .caution
+    font-style: normal
+    font-weight: 400
+    font-size: 15px
+    line-height: 130%
+    letter-spacing: 0.025em
+    color: #C3BBCA    
+.footer_menu
+  margin-top: 111px
+  li
+    padding-bottom: 15px
+  a
+    text-decoration: none
+    color: #969397
+.social
+  text-align: right
+  .caution
+    margin: 38px 0
+  .phone
+    margin-top: 38px
+  .email
+    margin-bottom: 38px
+  .inst
+    margin-left: 29px
 
 
+.back_to_top
+  width: 43px
+  line-height: 30px
+  cursor: pointer
+  border-radius: 2px
+  img
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 //adaptive
@@ -851,20 +891,17 @@ a:hover
     background-size: 135%
   .slide2
     background: url(../img/doctors_img/grishina.jpg) -117px bottom no-repeat
-    background-size: 140%
   .slide3
     background: url(../img/doctors_img/kolodina.jpg) -117px bottom no-repeat
-    background-size: 140%
   .slide4
     background: url(../img/doctors_img/abakumov.jpg) -117px bottom no-repeat
-    background-size: 140% 
   .slide5
     background: url(../img/doctors_img/subbotina.jpg) -117px bottom no-repeat
-    background-size: 140%
   .slide6
-    background: url(../img/doctors_img/tretyakova.jpg) -117px bottom no-repeat
-    background-size: 140%      
-          
+    background: url(../img/doctors_img/tretyakova.jpg) -117px bottom no-repeat  
+  .slide2, .slide3, .slide4, .slide5, .slide6
+    background-size: 140% 
+             
   .social__phone
     padding-left: 60px
     img
