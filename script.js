@@ -113,7 +113,7 @@ for (let col = 0; col < cols; col++) {
   let img = document.createElement('img');
   img.src = images[current];
   el.appendChild(img);
-  part.style.setProperty('--x', -100/cols*col+'vw');
+  part.style.setProperty('--x', -99/cols*col+'vw');
   part.appendChild(el);
   main.appendChild(part);
   parts.push(part);
