@@ -535,6 +535,7 @@ h1
   animation-duration: 3s
   animation-name: slidein
   animation-iteration-count: infinite
+  background-size: 100% 
   ul li
     list-style-type: none
     h3
@@ -560,34 +561,32 @@ h1
     line-height: 152.69%
     letter-spacing: 0.025em
     color: #575359
-  .position
-    top: 80%
-    &_stomatologist
-      top: 85%
-    &_gigenist
-      top: 80%  
+  .position, .position_gigenist
+      top: 76%
+  .position_stomatologist
+    top: 81%   
 
 .slide1
-  background: url(../img/doctors_img/milchenko.jpg) bottom no-repeat
-  background-size: 107% 
+  background: url(../img/doctors_img/milchenko.jpg) 120% -100% no-repeat
+
 .slide2
-  background: url(../img/doctors_img/grishina.jpg) bottom no-repeat
-  background-size: 107% 
+  background: url(../img/doctors_img/grishina.jpg) 120% -100% no-repeat
+
 .slide3
-  background: url(../img/doctors_img/kolodina.jpg) bottom no-repeat
-  background-size: 107% 
+  background: url(../img/doctors_img/kolodina.jpg) 120% -100% no-repeat
+
 .slide4
-  background: url(../img/doctors_img/abakumov.jpg) bottom no-repeat
-  background-size: 107% 
+  background: url(../img/doctors_img/abakumov.jpg) 120% -100% no-repeat
 .slide5
-  background: url(../img/doctors_img/subbotina.jpg) bottom no-repeat
-  background-size: 107% 
+  background: url(../img/doctors_img/subbotina.jpg) 120% -100% no-repeat
+
 .slide6
-  background: url(../img/doctors_img/tretyakova.jpg) bottom no-repeat
-  background-size: 107% 
+  background: url(../img/doctors_img/tretyakova.jpg) 120% -100% no-repeat
+
 .slide7
-  background: url(../img/doctors_img/kurmanova.jpg) bottom no-repeat
-  background-size: 107% 
+  background: url(../img/doctors_img/kurmanova.jpg) 120% -100% no-repeat
+
+
 
      
  
@@ -599,16 +598,13 @@ h1
   -o-transform: scale(1)
   transform: scale(1)
 
-.wrapper
-  > input
-    display: none
 
-  .controls 
-    height: 10vh
-    margin-top: -80vh
-    position: absolute
-    margin-right: -40vh
-
+.controls 
+  height: 10vh
+  position: absolute
+  max-width: 40px
+  padding: 8rem 5rem 5rem!important
+  
   label
     cursor: pointer
     width: 20px
@@ -625,7 +621,12 @@ h1
     transition: background ease-in-out .5s
 
     &:hover
-      background: #C3BBCA
+      background: #C3BBCA  
+.wrapper
+  > input
+    display: none
+
+
 
 #slide1:checked ~ .controls label:nth-of-type(1), #slide2:checked ~ .controls label:nth-of-type(2), #slide3:checked ~ .controls label:nth-of-type(3), #slide4:checked ~ .controls label:nth-of-type(4), #slide5:checked ~ .controls label:nth-of-type(5)
   background: #C3BBCA
@@ -784,55 +785,76 @@ footer
 
 @media only screen and (min-width: 1440px)
   .slides
-    .position
-      top: 88%
+    .position, .position_gigenist
+      top: 75%
+    .position_stomatologist
+      top: 77% 
   .slide1
-    background: url(../img/doctors_img/milchenko.jpg) bottom no-repeat
-    background-size: 105%
+    background: url(../img/doctors_img/milchenko.jpg) 135% 210% no-repeat
+    background-size: 110%
   .slide2
-    background: url(../img/doctors_img/grishina.jpg) bottom no-repeat
-    background-size: 105%
+    background: url(../img/doctors_img/grishina.jpg) 135% 210% no-repeat
+    background-size: 110%
   .slide3
-    background: url(../img/doctors_img/kolodina.jpg) bottom no-repeat
-    background-size: 105%
+    background: url(../img/doctors_img/kolodina.jpg) 135% 210% no-repeat
+    background-size: 110%
   .slide4
-    background: url(../img/doctors_img/abakumov.jpg) bottom no-repeat
-    background-size: 105% 
+    background: url(../img/doctors_img/abakumov.jpg) 135% 210% no-repeat
+    background-size: 110% 
   .slide5
-    background: url(../img/doctors_img/subbotina.jpg) bottom no-repeat
-    background-size: 105%
+    background: url(../img/doctors_img/subbotina.jpg) 135% 210% no-repeat
+    background-size: 110%
   .slide6
-    background: url(../img/doctors_img/tretyakova.jpg) bottom no-repeat
-    background-size: 105% 
+    background: url(../img/doctors_img/tretyakova.jpg) 120% 210% no-repeat
+    background-size: 110%
+  .slide7
+    background: url(../img/doctors_img/kurmanova.jpg) 120% 210% no-repeat
+    background-size: 110%  
 
 @media (max-width: 1330px)
+  .connection
+    margin-top: 25%
+  .controls
+    padding: 8rem 4rem 5rem!important
   .slides
     h2
       font-size: 37px  
     .position
       font-size: 17px
-      top: 67%
+      top: 60%
+    .position_gigenist
+      font-size: 17px
+      top: 65% 
     .position_stomatologist
       font-size: 17px
-      top: 70%    
+      top: 65%    
   .slide1
-    background: url(../img/doctors_img/milchenko.jpg) top no-repeat
-    background-size: 100%
+    background: url(../img/doctors_img/milchenko.jpg) 90% -100% no-repeat
+    background-size: 120%
   .slide2
-    background: url(../img/doctors_img/grishina.jpg) top no-repeat
-    background-size: 100%
+    background: url(../img/doctors_img/grishina.jpg) 90% -100% no-repeat
+    background-size: 120%
   .slide3
-    background: url(../img/doctors_img/kolodina.jpg) top no-repeat
-    background-size: 100%
+    background: url(../img/doctors_img/kolodina.jpg) 90% -100% no-repeat
+    background-size: 120%
   .slide4
-    background: url(../img/doctors_img/abakumov.jpg) top no-repeat
-    background-size: 100% 
+    background: url(../img/doctors_img/abakumov.jpg) 90% -100% no-repeat
+    background-size: 120%
   .slide5
-    background: url(../img/doctors_img/subbotina.jpg) top no-repeat
-    background-size: 100%
+    background: url(../img/doctors_img/subbotina.jpg) 90% -100% no-repeat
+    background-size: 120%
   .slide6
-    background: url(../img/doctors_img/tretyakova.jpg) top no-repeat
-    background-size: 100% 
+    background: url(../img/doctors_img/tretyakova.jpg) 65% -300% no-repeat
+    background-size: 130%
+  .slide7
+    background: url(../img/doctors_img/kurmanova.jpg) 65% -300% no-repeat
+    background-size: 130%
+.price
+  margin-top: 190px
+  background: url("../img/bg/servises.jpg") 100% 100%/cover no-repeat     
+.registration
+  button
+    margin-top: 15px    
 
 @media (max-width: 1199px)
   .connection 
@@ -846,7 +868,7 @@ footer
       font-size: 37px  
     .position
       font-size: 17px
-      top: 55%
+      top: 66%
     .position_stomatologist
       font-size: 17px
       top: 70%
@@ -856,22 +878,51 @@ footer
       .description
         font-size: 17px  
   .slide1
-    background: url(../img/doctors_img/milchenko.jpg) -40px -50px no-repeat
-    background-size: 110%
+    background: url(../img/doctors_img/milchenko.jpg) 90% 0% no-repeat
+    background-size: 120%
+  .slide2
+    background: url(../img/doctors_img/grishina.jpg) 90% 0% no-repeat
+    background-size: 120%
+  .slide3
+    background: url(../img/doctors_img/kolodina.jpg) 90% 0% no-repeat
+    background-size: 120%
+  .slide4
+    background: url(../img/doctors_img/abakumov.jpg) 90% 0% no-repeat
+    background-size: 120%
+  .slide5
+    background: url(../img/doctors_img/subbotina.jpg) 90% 0% no-repeat
+    background-size: 120%
+  .slide6
+    background: url(../img/doctors_img/tretyakova.jpg) 65% 150% no-repeat
+    background-size: 130%
+  .slide7
+    background: url(../img/doctors_img/kurmanova.jpg) 65% 150% no-repeat
+    background-size: 130%
+.price
+  margin-top: 190px
+  background: url("../img/bg/servises.jpg") 100% 100%/cover no-repeat     
+.registration
+  button
+    margin-top: 15px  
   .price
     h2
       font-size: 28px
     p
-      font-size: 14px                          
+      font-size: 14px 
+
+
+
 
 @media (max-width: 991px)
   .connection
-    margin-top: 41%
+    margin-top: 75%
     img
       height: 50px
       width: 50px
   .nav__list-item
     font-size: 35px
+  .controls
+    padding: 8rem 2rem 5rem!important  
   .slides
     h2
       font-size: 32px  
