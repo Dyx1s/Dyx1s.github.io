@@ -606,6 +606,7 @@ h1
   -moz-transform: scale(1)
   -o-transform: scale(1)
   transform: scale(1)
+  
 
 
 .controls 
@@ -619,7 +620,6 @@ h1
     width: 20px
     height: 20px
     margin: 37px 23px 0 16px
-    /* position: relative */
     -webkit-border-radius: 50%
     -moz-border-radius: 50%
     -o-border-radius: 50%
@@ -630,7 +630,8 @@ h1
     transition: background ease-in-out .5s
 
     &:hover
-      background: #C3BBCA  
+      background: #C3BBCA
+
 .wrapper
   > input
     display: none
@@ -736,7 +737,7 @@ footer
   padding: 0 70px 0 50px
   ul
     list-style: none
-.adress, .footer_menu, .social
+.adress, .footer_menu, .social, .footer_authorities
   font-style: normal
   font-weight: 400
   font-size: 17px
@@ -752,7 +753,7 @@ footer
     line-height: 130%
     letter-spacing: 0.025em
     color: #C3BBCA    
-.footer_menu
+.footer_menu, .footer_authorities
   margin-top: 111px
   li
     padding-bottom: 15px
@@ -883,7 +884,16 @@ footer
     button
       height: 47px
   .price
+    margin-top: 190px
+    background: url("../img/bg/servises.jpg") 50% 90%/cover no-repeat
     h2
       font-size: 23px
     p
-      font-size: 14px                                
+      font-size: 14px 
+
+  footer 
+    .adress, .footer_menu, .social, .footer_authorities
+      font-size: 15px   
+    .social
+      .inst
+        margin-left: 20px    
